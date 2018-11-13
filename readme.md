@@ -2,10 +2,10 @@
 
 ## Most important function ##
 
-Observables
-Action
-Computed
-Reaction
+- Observables
+- Action
+- Computed
+- Reaction
 
 
 ## Data flow ##
@@ -24,16 +24,16 @@ configure({
   enforceActions: 'observed' || 'always' || 'never' || 'strict' 
 });
 
-useStrict could work
+- 'Observed' means that we are not allowing Observables to be modified outside of mobx Actions
+- 'Always' means that we are not allowing any state to be modified outside of mobx Actions
 
-'Observed' means that we are not allowing Observables to be modified outside of mobx Actions
-'Always' means that we are not allowing any state to be modified outside of mobx Actions
+useStrict could work
 
 
 ## Resources ##
 
-https://www.youtube.com/watch?v=XGwuM_u7UeQ (first 15 minutes are good)
-https://github.com/mobxjs/mobx-react-boilerplate
+- https://www.youtube.com/watch?v=XGwuM_u7UeQ (first 15 minutes are good)
+- https://github.com/mobxjs/mobx-react-boilerplate
 
 
 ## Quotes ##
