@@ -2,10 +2,10 @@
 
 ## Most important function ##
 
-- Observables
-- Action
-- Computed
-- Reaction
+- Observables - A variable with a get/set function so it can be mutated further down the stream
+- Action - Function that should mutate the state
+- Computed - An expression that listens to a certain state change and returns an new value
+- Reaction - Watches an observable for a state change and has the possibilty to trigger an action
 
 
 ## Data flow ##
