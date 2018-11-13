@@ -45,12 +45,12 @@ Actions should only, and always, be used on functions that modify state. Functio
 
 ### Pros for mobx ###
 
-Performance
-Quick to code
+- Performance
+- Quick to code
 
 
 ### Pros for Redux ###
 
-Easy to follow/read code
-Easy to test
-Huge community
+- Easy to follow/read code
+- Easy to test
+- Huge community
