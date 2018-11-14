@@ -13,7 +13,7 @@
 state => observables, computed => render
 state => observable changed => reaction => action
 
-### actions can change the state ###
+actions can change the state
 
 action => state
 
