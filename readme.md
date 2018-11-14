@@ -50,6 +50,70 @@ https://github.com/jhen0409/react-native-debugger in combination with https://gi
     export default class appStore {
       // ...
     }
+    
+
+## Suggested architecture ## 
+
+Store => Container (smart component) => Presentational component (Dumb component)
+
+### Store example ###
+
+    import { observable, computed, action } from "mobx";
+
+    import TodoModel from "./TodoModel";
+
+    export default class TodoListModel {
+      @observable todos = [];
+
+      @computed
+      get unfinishedTodoCount() {
+        return this.todos.filter(todo => !todo.finished).length;
+      }
+
+      @action
+      addTodo(title) {
+        this.todos.push(new TodoModel(title));
+      }
+    }
+    
+### Container example ###
+
+    import { observable } from "mobx";
+    import { observer } from "mobx-react";
+
+    import Todo from "./Todo";
+
+
+    @observer
+    class TodoList extends React.Component {
+      @observable newTodoTitle = "";
+
+      render() {
+        return (
+          <div>
+            <ul>
+              {this.props.store.todos.map(todo => (
+                <Todo todo={todo} key={todo.id} />
+              ))}
+            </ul>
+            Tasks left: {this.props.store.unfinishedTodoCount}
+          </div>
+        );
+      }
+    }
+
+
+### Presentational component example ###
+
+    import { observer } from "mobx-react";
+
+    const Todo = observer(({ todo }) => {
+      return (
+        <h2>
+          {todo.title}
+        </h2>
+      );
+    });
 
 ## Mobx vs Redux ##
 
