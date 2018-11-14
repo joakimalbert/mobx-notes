@@ -41,6 +41,17 @@ useStrict could work
 Actions should only, and always, be used on functions that modify state. Functions that just perform look-ups, filters etc should not be marked as actions; to allow MobX to track their invocations.
 
 
+## Debug ##
+
+https://github.com/jhen0409/react-native-debugger in combination with https://github.com/zalmoxisus/mobx-remotedev
+
+    import remotedev from 'mobx-remotedev';
+
+    @remotedev(/*{ config }*/)
+    export default class appStore {
+      // ...
+    }
+
 ## Mobx vs Redux ##
 
 ### Pros for mobx ###
