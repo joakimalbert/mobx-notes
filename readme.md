@@ -10,12 +10,11 @@
 
 ## Data flow ##
 
-state => observables, computed => render
-state => observable changed => reaction => action
+- state => observables, computed => render
+- state => observable changed => reaction => action
+- action => state
 
-actions can change the state
-
-action => state
+*Actions can change the state*
 
 
 ## Config ## 
