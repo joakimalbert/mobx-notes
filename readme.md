@@ -56,7 +56,7 @@ https://github.com/jhen0409/react-native-debugger in combination with https://gi
 
 Store => Container (smart component) => Presentational component (Dumb component)
 
-### Store example ###
+#### Store example ####
 
     import { observable, computed, action } from "mobx";
 
@@ -76,7 +76,7 @@ Store => Container (smart component) => Presentational component (Dumb component
       }
     }
     
-### Container example ###
+#### Container example ####
 
     import { observable } from "mobx";
     import { observer } from "mobx-react";
@@ -103,7 +103,7 @@ Store => Container (smart component) => Presentational component (Dumb component
     }
 
 
-### Presentational component example ###
+#### Presentational component example ####
 
     import { observer } from "mobx-react";
 
@@ -117,13 +117,13 @@ Store => Container (smart component) => Presentational component (Dumb component
 
 ## Mobx vs Redux ##
 
-### Pros for mobx ###
+#### Pros for mobx ####
 
 - Performance
 - Quick to code
 
 
-### Pros for Redux ###
+#### Pros for Redux ####
 
 - Easy to follow/read code
 - Easy to test
