@@ -35,6 +35,7 @@ useStrict could work
 - https://github.com/mobxjs/mobx-react-boilerplate
 - https://github.com/mobxjs/awesome-mobx
 - https://blog.geekyants.com/structuring-a-react-native-mobx-application-the-right-way-c1e9d2ae0ff7 (mobx architecture)
+- https://mobx.js.org/best/react-performance.html
 
 
 ### Quotes ###
