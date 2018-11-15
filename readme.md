@@ -39,11 +39,13 @@ useStrict could work
 
 ### Quotes ###
 
-"Actions should only, and always, be used on functions that modify state. Functions that just perform look-ups, filters etc should not be marked as actions; to allow MobX to track their invocations."
+> Actions should only, and always, be used on functions that modify state. Functions that just perform look-ups, filters etc should not be marked as actions; to allow MobX to track their invocations.
 
-"Use many small components"
+> Use many small components
 
-"@observer components will track all values they use and re-render if any of them changes. So the smaller your components are, the smaller the change they have to re-render; it means that more parts of your user interface have the possibility to render independently of each other."
+> @observer components will track all values they use and re-render if any of them changes. So the smaller your components are, the smaller the change they have to re-render; it means that more parts of your user interface have the possibility to render independently of each other.
+
+> Render lists in dedicated components
 
 
 ### Debug ###
