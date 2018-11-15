@@ -146,4 +146,4 @@ Store => Container (smart component) => Presentational component (Dumb component
 
 - Easy to follow/read code
 - Easy to test
-- Huge community
+- Large community
