@@ -47,6 +47,16 @@ useStrict could work
 
 > Render lists in dedicated components (https://mobx.js.org/best/react-performance.html#render-lists-in-dedicated-components)
 
+> When using mobx-react it is recommended to dereference values as late as possible. This is because MobX will re-render components that dereference observable values automatically. If this happens deeper in your component tree, less components have to re-render.
+
+    Fast:
+
+    <DisplayName person={person} />
+
+    Slower:
+
+    <DisplayName name={person.name} />
+
 
 ### Debug ###
 
