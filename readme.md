@@ -45,7 +45,7 @@ useStrict could work
 
 > @observer components will track all values they use and re-render if any of them changes. So the smaller your components are, the smaller the change they have to re-render; it means that more parts of your user interface have the possibility to render independently of each other.
 
-> Render lists in dedicated components
+> Render lists in dedicated components (https://mobx.js.org/best/react-performance.html#render-lists-in-dedicated-components)
 
 
 ### Debug ###
